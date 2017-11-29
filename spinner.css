@@ -1,0 +1,50 @@
+body{
+
+}
+.spinnerArea{
+  position:relative;
+  border-radius:5px;
+  width:100px;
+  height:100px;
+  margin:auto;
+}
+.round{
+  position:absolute;
+  border-radius:15px;
+  width:25px;
+  height:25px;
+}
+
+.a{
+  background-color:RED;
+  transition: transform 1s linear;
+}
+.b{
+  background-color:GREEN;
+  left:75px;
+  transition: transform 1s linear;
+}
+.c{
+  background-color:BLUE;
+  top:75px;
+  transition: transform 1s linear;
+}
+.d{
+  background-color:ORANGE;
+  left:75px;
+  top:75px;
+  transition: transform 1s linear;
+}
+
+.spinnerArea:hover .a{
+  transform: translate(75px,75px);
+}
+.spinnerArea:hover .b{
+  transform: translate(-75px,75px);
+}
+.spinnerArea:hover .c{
+  transform: translate(75px,-75px);
+}
+.spinnerArea:hover .d{
+  transform: translate(-75px,-75px);
+}
